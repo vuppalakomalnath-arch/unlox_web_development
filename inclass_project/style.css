@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: darkgray;
+}
+nav h2{
+    color: #ffffff;
+}
+.contents{
+    display: flex;
+    gap: 30px;
+}
+.contents a{
+    color: white;
+    text-decoration: none;
+}
+.hero{
+    background-color: lightblue;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+.hero h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.hero p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.hero button{
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    background-color: aqua;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.title{
+    text-align: center;
+    font-size: 35px;
+}
+.card{
+    border: 1px solid black;
+    padding: 30px;
+    text-align: center;
+    background: white;
+}
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 60px;
+}
+.footer{
+    background: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+}
