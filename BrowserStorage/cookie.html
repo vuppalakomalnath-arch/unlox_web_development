@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //cookie- stores small size of data, Itis stored in the browser and sent to the server with every request. and has a expiry date.
+        //syntax--  document.cookie="key=value; 
+        document.cookie="username=Komal;expires=Sat 25 july 2026 12:00:00 UTC;"
+        document.cookie="email=Komal@gmail.com;expires=Fri 23 july 2026 12:55:00 UTC;"
+        //Local Storage- stores large size of data, it is stored in the browser and doesnot removes the data until the user removes it.
+        localStorage.setItem("username","Komalnath vuppala")
+        const data=localStorage.getItem("username")
+        localStorage.removeItem("username")
+        //Session Storage- stores sensitive data which cannot be stored for long period and expires after completing one session
+        sessionStorage.setItem("username","Komal")
+        
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
