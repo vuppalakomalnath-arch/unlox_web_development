@@ -17,6 +17,16 @@
         DoHomeWork("Maths",function(){
             console.log("Homework is going on!")
         })
+        function OrderStatus(status1,callback){
+            console.log("Order is placed")
+            callback(function(status3){
+                    console.log("pizza is ready")
+            }) }
+        OrderStatus("placed",function(){
+            console.log("Order is packing")
+            callback()
+        })    
     </script>
+
 </body>
 </html>
