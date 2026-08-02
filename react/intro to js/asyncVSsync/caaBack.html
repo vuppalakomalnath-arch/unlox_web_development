@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //CALBACK HELL 
+        //1. CallBack is a function(callback())
+        //2. CallBAck is passed as parameter(inside another function)
+        function DoHomeWork(subject,callback){
+                console.log(`Doing Homework of ${subject}`)
+                callback()
+        }
+        DoHomeWork("Maths",function(){
+            console.log("Homework is going on!")
+        })
+        function OrderStatus(status1,callback){
+            console.log("Order is placed")
+            callback(function(status3){
+                    console.log("pizza is ready")
+            }) }
+        OrderStatus("placed",function(){
+            console.log("Order is packing")
+            callback()
+        })    
+    </script>
+
+</body>
+</html>

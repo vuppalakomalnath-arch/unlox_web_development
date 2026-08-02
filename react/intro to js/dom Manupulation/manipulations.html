@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">login</button>
+    <p id="mp">Welcome guests</p>
+    <div id="myDiv">This is Div container</div>
+    <!-- //change the css properties -->
+     <p id="mypara">This is a cold HTML tag!!!</p>
+     <!-- dynamically adding html tag-->
+      <ul id="xyz">
+        <li>GYM</li>
+      </ul>
+    <script>
+        //update text Content
+        const button=document.getElementById("btn")
+        console.log(button)
+        console.log(button.textContent)
+        button.textContent="LogOut"
+        const paragraph=document.getElementById("mp")
+        paragraph.textContent="Good Evening Ammmuuullluuu!" 
+        console.log(paragraph) 
+        //update the tag -InnerHtml- to updat the tag or also to change the content of the tag.
+        const container=document.getElementById("myDiv")
+        console.log(container)
+        // container.innerHTML=<h1>This is a heading tag now! </h1>
+        container.innerHTML=`<p>This is a <mark>paragraph</mark> tag!!</p>
+        <button>Login</button>` 
+        //style the html using js
+        const para=document.getElementById("mypara")
+        console.log(para)
+        para.style.color="red"
+        para.style.backgroundColor="black"
+        para.style.textAlign="center"
+        para.textContent="This is new Paragraph tag!!!"
+        //create html tag with js 
+        const ul=document.getElementById("xyz")
+        const li=document.createElement("li")
+        li.textContent="Office"
+        li.style.color="red" 
+        ul.appendChild(li)
+
+    </script>
+</body>
+</html>
