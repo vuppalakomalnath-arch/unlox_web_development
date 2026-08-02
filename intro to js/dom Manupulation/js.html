@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="myP" class="paragraph">Paragrapgh tag</p>
+    <p class="paragraph">Paragraph tag 1 </p>
+
+
+    <script>
+        // <!-- //get the html tag with its id.  -->
+        const p=document.getElementById("myP")
+        console.log(p)
+        console.log(p.textContent);
+        // <!-- get the html tag with its class -->;
+        const para=document.getElementsByClassName("paragraph") 
+        console.log(para)
+        console.log(para.textContent[1])
+        // <!-- get html tag by its tag -->;
+        const ele=document.getElementsByTagName(p)
+        console.log(ele)
+        console.log(ele.textContent[0]) 
+    </script>
+</body>
+</html>
